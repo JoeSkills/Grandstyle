@@ -8,20 +8,13 @@ layout: 'base.njk'
   <h1>Our Music</h1>
   <p>Get Access To The Top Music In Nigeria</p>
   <div>
-    {%- for song in collections.song -%}
+    {%- for song in collections.preview -%}
     <div>
       <a href="">
         <img
           decoding="async"
-          src="../../assets/background-image-1.webp"
+          src="{{ song.data.image }}"
           alt="Person Recording In A Studio"
-          srcset="
-            ../../assets/background-image-1-600.webp   600w,
-            ../../assets/background-image-1-1150.webp 1150w,
-            ../../assets/background-image-1-1510.webp 1510w,
-            ../../assets/background-image-1-1800.webp 1800w,
-            ../../assets/background-image-1-2048.webp 2048w
-          "
         />
         <h2>{{ song.data.title }}</h2>
         <p>

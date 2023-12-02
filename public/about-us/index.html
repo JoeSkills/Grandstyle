@@ -10,6 +10,10 @@
       media="print"
       onload="this.media='all'; this.onload=null;"
     />
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
     <noscript>
       <link rel="stylesheet" href="style.css" />
     </noscript>
@@ -142,5 +146,16 @@
       </div>
     </footer>
     <script type="module" src="./main.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

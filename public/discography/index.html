@@ -10,6 +10,10 @@
       media="print"
       onload="this.media='all'; this.onload=null;"
     />
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
     <noscript>
       <link rel="stylesheet" href="style.css" />
     </noscript>
@@ -78,34 +82,8 @@
       <a href="">
         <img
           decoding="async"
-          src="../../assets/background-image-1.webp"
+          src="../../assets/background-image-2-600.webp"
           alt="Person Recording In A Studio"
-          srcset="
-            ../../assets/background-image-1-600.webp   600w,
-            ../../assets/background-image-1-1150.webp 1150w,
-            ../../assets/background-image-1-1510.webp 1510w,
-            ../../assets/background-image-1-1800.webp 1800w,
-            ../../assets/background-image-1-2048.webp 2048w
-          "
-        />
-        <h2>Photograph</h2>
-        <p>
-          Ed Sheeran
-        </p>
-      </a>
-    </div><div>
-      <a href="">
-        <img
-          decoding="async"
-          src="../../assets/background-image-1.webp"
-          alt="Person Recording In A Studio"
-          srcset="
-            ../../assets/background-image-1-600.webp   600w,
-            ../../assets/background-image-1-1150.webp 1150w,
-            ../../assets/background-image-1-1510.webp 1510w,
-            ../../assets/background-image-1-1800.webp 1800w,
-            ../../assets/background-image-1-2048.webp 2048w
-          "
         />
         <h2>Castle On The Hill</h2>
         <p>
@@ -149,5 +127,16 @@
       </div>
     </footer>
     <script type="module" src="./main.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
