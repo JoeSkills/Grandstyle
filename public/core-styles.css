@@ -367,8 +367,6 @@ nav .nav_icons,
   color: #fff;
   border: 0.125rem solid #c74334;
   font-weight: 600;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  transform-origin: 67.3906px 25px;
 }
 
 .header-cta-buttons .cta-btn-filled:hover {
@@ -386,6 +384,17 @@ nav .nav_icons,
 .header-cta-buttons .cta-btn-outlined:hover {
   background-color: #fff;
   color: rgb(68, 68, 68);
+}
+
+.load-in {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.load-in.in-view {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*TABLET VERSION*/

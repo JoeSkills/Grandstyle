@@ -1,7 +1,7 @@
 .about-us {
   width: 100%;
   padding-block: 6.25rem;
-  background-color: #f3f3f3;
+  background-color: #777777;
 }
 .about-us-section {
   text-align: left;
@@ -9,11 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
 }
 .about-us-section h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker';
-  color: #111111;
+  font-family: 'Permanent Marker', sans-serif;
   font-size: 2rem;
 }
 
@@ -26,7 +26,6 @@
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
 }
 
@@ -35,7 +34,6 @@
   font-family: 'Kanit', sans-serif;
   line-height: 1.5556em;
   letter-spacing: 0.5px;
-  color: #333333;
 }
 
 .about-us-section .about-image {
@@ -81,7 +79,6 @@
 }
 
 .about-cta-btn:hover {
-  color: #c74334;
   background-color: transparent;
   border: 2px solid #c74334;
 }
@@ -94,6 +91,7 @@
 
 .about-image:hover img {
   transform: scale(1.2);
+  transform: rotate(5deg);
 }
 
 .services {
@@ -357,13 +355,14 @@ section.contact-us > div > div > .lower-heading {
 
 section.blog-preview {
   padding: 6.25rem 3.125rem;
-  background-color: #f3f3f3;
+  background-color: #777777;
 }
 
 section.blog-preview > h2 {
   font-family: 'Permanent Marker', sans-serif;
   text-transform: uppercase;
   font-family: 'Permanent Marker';
+  color: #fff;
   font-size: 2rem;
 }
 
@@ -448,6 +447,7 @@ section.blog-preview > .blog-content-wrapper > div > img {
 
 section.blog-preview > .blog-content-wrapper > div > img:hover {
   transform: scale(1.2);
+  transform: rotate(5deg);
 }
 
 .visit-blog-cta-btn {
@@ -455,11 +455,11 @@ section.blog-preview > .blog-content-wrapper > div > img:hover {
   margin-top: 2.1875rem;
   padding: 0.9375rem 2.1875rem;
   background-color: transparent;
-  color: #c74334;
+  color: #fff;
   width: fit-content;
   text-transform: uppercase;
   font-weight: 600;
-  border: 1px solid #c74334;
+  border: 1px solid #fff;
 }
 
 .visit-blog-cta-btn:hover {

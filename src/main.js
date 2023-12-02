@@ -33,3 +33,22 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     nav.classList.remove('active');
   })
 );
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('.load-in');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    },
+    { threshold: 0.11 }
+  ); // Adjust the threshold as needed
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});

@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Discography - Grandstyle Ent.</title>
+    <title>{{ title }} - Grandstyle Ent.</title>
   </head>
   <body>
     <header>
@@ -46,13 +46,13 @@
           <a href="/contact-us/" class="nav-link">Contact Us</a>
         </div>
       </nav>
-      <div class="page-display-text">Discography</div>
+      <div class="page-display-text">{{ title }}</div>
       <div class="steps steps_animation">
         <div class="steps__item">
           <a class="steps__content" href="/"> Home</a>
         </div>
         <div class="steps__item">
-          <a class="steps__content" href="/discography/"> Discography </a>
+          <a class="steps__content" href="/{{ pathname }}/"> {{ title }} </a>
         </div>
       </div>
       <div class="bg-image-wrapper">
@@ -103,6 +103,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="../discography/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
