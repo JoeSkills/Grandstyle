@@ -12,6 +12,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Artist', name: 'artist', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Date Published', name: 'date', widget: 'datetime' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Song', name: 'song', widget: 'file' }
