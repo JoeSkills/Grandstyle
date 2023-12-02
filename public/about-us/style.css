@@ -156,7 +156,7 @@ footer > .social-icons-links > div > .social-icons-link {
 }
 
 /* MOBILE VERSION */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 750px) {
   .about-us-section {
     padding: 0px 20px;
     flex-direction: column;
