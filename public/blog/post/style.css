@@ -8,10 +8,37 @@
   object-fit: cover;
 }
 
+.blog-content {
+  margin-top: 0.9375rem;
+  width: 80%;
+}
+
 .blog-content-title {
   margin-bottom: 0.9375rem;
   font-size: 3.125rem;
   text-transform: uppercase;
+}
+
+.blog-content .author-details {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-author-content-wrapper {
+  padding: 1.25rem;
+  background-color: #ddd;
+  margin-top: 2.1875rem;
+  display: flex;
+}
+
+.blog-author-content-image img {
+  width: 12.5rem;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.disqus-wrapper {
+  padding: 6.25rem 3.125rem;
 }
 
 footer {

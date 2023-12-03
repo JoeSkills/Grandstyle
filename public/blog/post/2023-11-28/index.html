@@ -118,10 +118,10 @@
       </div>
     </header>
     <section class="blog-content-wrapper">
-      <img src="../../../assets/about-us-1-600.webp" alt="" class="blog-content-image" />
+      <img src="../../../assets/about-us-1-1150.webp" alt="" class="blog-content-image" />
 
       <div class="blog-content">
-        <div>
+        <div class="author-details">
           <i class="far fa-calendar"></i>
 
           2023-11-28
@@ -142,8 +142,27 @@
 <p>Feel free to customize the content, add more sections, and include addit</p>
 
         </div>
+
+        <div class="blog-author-content-wrapper">
+          <div class="blog-author-content-image">
+            <img src="../../../assets/background-image-2-600.webp" alt="" />
+          </div>
+          <div class="blog-author-content">
+            <h3>
+              Joseph Oritseweyinmi
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel tellus consequat condimentum. ...
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <div class="disqus-wrapper">
+      <div id="disqus_thread"></div>
+    </div>
+
     <footer>
       <div>
         <h2>GrandStyle Ent.</h2>
@@ -178,6 +197,23 @@
     </footer>
     <script type="module" src="../main.js"></script>
     <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://playful-pika-140aca-netlify-app.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {
           if (!user) {
@@ -188,5 +224,11 @@
         });
       }
     </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
   </body>
 </html>

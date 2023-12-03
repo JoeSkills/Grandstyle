@@ -30,3 +30,10 @@ collections:
       - { label: 'Date Published', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Author Name', name: 'authorName', widget: 'string' }
+      - { label: 'Author Image', name: 'authorImage', widget: 'image' }
+      - {
+          label: 'Author Description',
+          name: 'authorDescription',
+          widget: 'string',
+        }
