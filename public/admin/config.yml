@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: Joseph-Updates
+media_folder: 'public/assets/song'
+public_folder: 'assets/song'
+collections:
+  - name: 'song'
+    label: 'Song'
+    folder: 'src/song'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Artist', name: 'artist', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'string' }
+      - { label: 'Date Published', name: 'date', widget: 'datetime' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Song', name: 'song', widget: 'file' }
