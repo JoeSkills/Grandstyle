@@ -1,0 +1,72 @@
+.featured-posts {
+  padding: 6.25rem 4.375rem;
+}
+
+.featured-posts h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featured-posts-wrapper .featured-post {
+  display: flex;
+  gap: 2.1875rem;
+  align-items: center;
+  margin-top: 2.1875rem;
+}
+
+.featured-post-content-image {
+  max-width: 50%;
+  flex: 0 0 calc(50% - 2.1875rem);
+  height: 25rem;
+}
+
+.featured-post-content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-post-content {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  max-width: 50%;
+  flex: 0 0 calc(50% - 2.1875rem);
+}
+
+.featured-post-author-desc span {
+  margin-right: 0.625rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: #333;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.featured-post-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.featured-post-desc {
+  font-size: 0.9375rem;
+}
+
+@media screen and (max-width: 950px) {
+  .featured-post {
+    flex-direction: column;
+  }
+  .featured-post > * {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .featured-posts {
+    padding-inline: 1.25rem;
+  }
+}

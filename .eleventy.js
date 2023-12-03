@@ -19,6 +19,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/services/core-styles.css');
   eleventyConfig.addPassthroughCopy('./src/services/main.js');
 
+  eleventyConfig.addPassthroughCopy('./src/blog/style.css');
+  eleventyConfig.addPassthroughCopy('./src/blog/core-styles.css');
+  eleventyConfig.addPassthroughCopy('./src/blog/main.js');
+
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/fonts');
   eleventyConfig.addPassthroughCopy('./src/admin');
