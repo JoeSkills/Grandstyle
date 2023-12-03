@@ -355,6 +355,7 @@
       <h2>Our Blog</h2>
       <p class="lower-heading">Checkout Our Latest Content</p>
       <div class="blog-content-wrapper">
+        {%- for post in collections.featured -%}
         <div class="blog-content load-in">
           <img
             src="assets/background-image-2.webp"
@@ -372,66 +373,16 @@
           <div class="blog-content-text">
             <h3>
               <a href="">
-                Begin by setting the stage for the vibrancy of Nigeria's music
-                scene and its historical significance in shaping African music.
+                {{ post.data.title }}
               </a>
             </h3>
 
-            <a href="">Read More</a>
+            <a href="/blog/">Read More</a>
           </div>
         </div>
-        <div class="blog-content load-in">
-          <img
-            src="assets/background-image-3-600.webp"
-            loading="lazy"
-            decoding="async"
-            alt="Recording Studio In Nigeria"
-            srcset="
-              assets/background-image-3-600.webp   600w,
-              assets/background-image-3-1150.webp 1150w,
-              assets/background-image-3-1510.webp 1510w,
-              assets/background-image-3-1800.webp 1800w,
-              assets/background-image-3-2048.webp 2048w
-            "
-          />
-          <div class="blog-content-text">
-            <h3>
-              <a href="">
-                Emphasize the critical role of artist development in the success
-                of musicians and the unique approach GrandStyle takes.
-              </a>
-            </h3>
-
-            <a href="">Read More</a>
-          </div>
-        </div>
-        <div class="blog-content load-in">
-          <img
-            src="assets/about-us-1.webp"
-            decoding="async"
-            loading="lazy"
-            alt="Recording Studio In Nigeria"
-            srcset="
-              assets/about-us-1-600.webp   600w,
-              assets/about-us-1-1150.webp 1150w,
-              assets/about-us-1-1510.webp 1510w,
-              assets/about-us-1-1800.webp 1800w,
-              assets/about-us-1-2048.webp 2048w
-            "
-          />
-          <div class="blog-content-text">
-            <h3>
-              <a href="">
-                Introduce the rising trend of acoustic music and its ability to
-                connect artists with their audience on a more intimate level.
-              </a>
-            </h3>
-
-            <a href="">Read More</a>
-          </div>
-        </div>
+        {%- endfor %}
       </div>
-      <a href="" class="visit-blog-cta-btn"> Visit Our Blog </a>
+      <a href="/blog/" class="visit-blog-cta-btn"> Visit Our Blog </a>
     </section>
     <footer>
       <div>

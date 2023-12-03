@@ -55,6 +55,23 @@
   font-size: 0.9375rem;
 }
 
+.text-cutter {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.text-cutter::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%; /* Adjust the width to control the cutting effect */
+  height: 100%;
+  background: linear-gradient(to right, transparent, #fff 50%);
+  pointer-events: none;
+}
+
 @media screen and (max-width: 950px) {
   .featured-post {
     flex-direction: column;

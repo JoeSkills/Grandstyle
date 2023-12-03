@@ -165,39 +165,32 @@
     <section class="featured-posts">
       <h2>Featured Posts</h2>
       <div class="featured-posts-wrapper">
+        {%- for post in collections.featured -%}
         <div class="featured-post">
           <div class="featured-post-content-image">
             <img
               decoding="async"
-              src="../../assets/background-image-1.webp"
+              src="{{ post.data.image }}"
               alt="Person Recording In A Studio"
-              srcset="
-                ../../assets/background-image-1-600.webp   600w,
-                ../../assets/background-image-1-1150.webp 1150w,
-                ../../assets/background-image-1-1510.webp 1510w,
-                ../../assets/background-image-1-1800.webp 1800w,
-                ../../assets/background-image-1-2048.webp 2048w
-              "
             />
           </div>
           <div class="featured-post-content">
             <div class="featured-post-author-desc">
-              <span><i class="far fa-calendar"></i> October 10, 2023 </span>
+              <span><i class="far fa-calendar"></i> {{ post.data.date }} </span>
               <span
-                ><i class="fas fa-pencil-alt"></i> Joseph Oritseweyinmi
+                ><i class="fas fa-pencil-alt"></i> {{ post.data.author }}
               </span>
             </div>
             <p class="featured-post-title">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae, quas.
+              {{ post.data.title }}
             </p>
-            <div class="featured-post-desc">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-              quo assumenda vero. Odio, a iure?
+            <div class="featured-post-desc text-cutter">
+              {{ post.data.description }}
             </div>
-            <a href=""> Read More </a>
+            <a href="/blog/post/{{ post.data.date }}"> Read More </a>
           </div>
         </div>
+        {%- endfor %}
       </div>
     </section>
     <script type="module" src="./main.js"></script>
