@@ -85,4 +85,4 @@ function changeTextAnimation() {
   currentDataIndex = (currentDataIndex + 1) % changingData.length;
 }
 
-setInterval(changeTextAnimation, 12000);
+setInterval(changeTextAnimation, 10000);

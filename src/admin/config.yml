@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: Joseph-Updates
-media_folder: 'public/assets/artist'
+media_folder: 'public/assets/image'
 public_folder: 'assets/artist'
 collections:
   - name: 'artist'
@@ -14,7 +14,14 @@ collections:
       - { label: 'Artist', name: 'artist', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Song', name: 'song', widget: 'file' }
+      - label: 'Songs'
+        name: 'songs'
+        widget: 'list'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'String' }
+          - { name: 'artist', label: 'Artist', widget: 'string' }
+          - { name: 'image', label: 'Image', widget: 'image' }
+          - { name: 'tags', label: 'Tags', widget: 'list' }
 
   - name: 'post'
     label: 'Post'

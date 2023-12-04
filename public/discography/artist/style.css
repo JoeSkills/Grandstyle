@@ -49,6 +49,11 @@ section.discography > div > div > a > h2 {
   margin-top: 0.1875rem;
 }
 
+.artist-intro {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   background-color: #212121;
   padding: 6.25rem 3.125rem;
