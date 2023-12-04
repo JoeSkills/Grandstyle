@@ -15,6 +15,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/discography/core-styles.css');
   eleventyConfig.addPassthroughCopy('./src/discography/main.js');
 
+  eleventyConfig.addPassthroughCopy('./src/discography/artist/style.css');
+  eleventyConfig.addPassthroughCopy('./src/discography/artist/core-styles.css');
+  eleventyConfig.addPassthroughCopy('./src/discography/artist/main.js');
+
   eleventyConfig.addPassthroughCopy('./src/services/style.css');
   eleventyConfig.addPassthroughCopy('./src/services/core-styles.css');
   eleventyConfig.addPassthroughCopy('./src/services/main.js');

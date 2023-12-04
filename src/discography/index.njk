@@ -8,18 +8,16 @@ layout: 'base.njk'
   <h1>Our Music</h1>
   <p>Get Access To The Top Music In Nigeria</p>
   <div>
-    {%- for song in collections.song -%}
+    {%- for artist in collections.artist -%}
     <div>
-      <a href="">
+      <a href="/discography/artist/{{ artist.data.slug }}">
         <img
           decoding="async"
-          src="{{ song.data.image }}"
+          src="{{ artist.data.image }}"
           alt="Person Recording In A Studio"
         />
-        <h2>{{ song.data.title }}</h2>
-        <p>
-          {{ song.data.artist }}
-        </p>
+
+        <h2>{{ artist.data.name }}</h2>
       </a>
     </div>
     {%- endfor %}

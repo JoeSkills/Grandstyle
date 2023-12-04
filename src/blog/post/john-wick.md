@@ -1,6 +1,7 @@
 ---
 title: 'Unleashing the Legend: John Wick'
 date: '2023-11-28'
+slug: john-wick
 description: 'Explore the intense world of John Wick, portrayed by Keanu Reeves, and delve into the impact of this iconic character on the action movie genre.'
 image: '../../../assets/about-us-1-1150.webp'
 authorImage: '../../../assets/background-image-2-600.webp'

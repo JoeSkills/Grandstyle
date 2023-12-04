@@ -134,25 +134,24 @@
           {{ content | safe }}
         </div>
 
-        <div class="blog-author-content-wrapper">
-          <div class="blog-author-content-image">
-            <img src="{{ authorImage }}" alt="" />
-          </div>
-          <div class="blog-author-content">
-            <h3>
-              {{ authorName }}
-            </h3>
-            <p>
+        <div class="author-card">
+          <img
+            class="author-image"
+            src="{{ authorImage }}"
+            alt="Author Image"
+          />
+          <div class="author-details">
+            <div class="author-name">{{ authorName }}</div>
+            <p class="author-description">
               {{ authorDescription }}
             </p>
           </div>
         </div>
       </div>
+      <div class="disqus-wrapper">
+        <div id="disqus_thread"></div>
+      </div>
     </section>
-
-    <div class="disqus-wrapper">
-      <div id="disqus_thread"></div>
-    </div>
 
     <footer>
       <div>

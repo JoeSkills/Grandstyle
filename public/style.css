@@ -425,7 +425,6 @@ section.blog-preview > .lower-heading {
   letter-spacing: 2px;
   line-height: 1;
   width: fit-content;
-  padding-inline: 1.25rem;
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
 }
 
@@ -478,9 +477,6 @@ section.blog-preview > .blog-content-wrapper > div > .blog-content-text > a {
   background-color: #c74334;
   color: #fff;
   width: fit-content;
-}
-
-.blog-content-text-desc {
 }
 
 section.blog-preview
@@ -666,6 +662,11 @@ footer > .social-icons-links > div > .social-icons-link {
   .about-cta-btn {
     margin-top: 0.9375rem;
   }
+
+  .why-choose-us {
+    padding-inline: 0.625rem;
+  }
+
   .why-choose-us-content-wrapper > div {
     flex: 1 0 100%;
     max-width: 100%;

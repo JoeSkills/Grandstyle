@@ -1,3 +1,4 @@
 {
-  "tags": "artist"
+  "tags": "artist",
+  "layout": "artist.njk"
 }

@@ -337,12 +337,18 @@ nav .nav_icons,
 
 .front-text {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  text-align: center;
-  width: 100%;
+  text-align: left;
+  max-width: 50%;
+  display: flex;
+  margin-inline: auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: start;
+  animation: fadeIn 12s infinite;
 }
 
 .front-text h1 {
@@ -350,19 +356,74 @@ nav .nav_icons,
   text-transform: uppercase;
   animation: slidebottom 2s ease forwards;
   transition-delay: 3s;
-  font-size: 2.8125rem;
+  font-size: 28px;
   font-weight: 900;
+  margin-top: 8px;
 }
 
 .front-text p {
-  font-size: 1.5rem;
+  font-size: 18px;
   color: #ddd;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: 800;
+  margin-top: 8px;
 }
+
+.front-text .changing-image-wrapper {
+  width: 200px;
+  height: 200px;
+}
+
 .front-text img {
-  display: none;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.front-text a {
+  font-size: 18px;
+  padding: 15px 25px;
+  background-color: #c74334;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.changing-text {
+  animation: changeText 8s infinite;
+}
+
+@keyframes fadeIn {
+  0%,
+  25% {
+    opacity: 0;
+    transform: translateY(20px) translateX(-50%); /* Move text up */
+  }
+  50%,
+  75% {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%); /* Bring text down */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) translateX(-50%); /* Move text up again */
+  }
+}
+
+@keyframes changeText {
+  0%,
+  25% {
+    opacity: 1;
+  }
+  50%,
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .swiper {
   width: 100%;
@@ -439,8 +500,31 @@ nav .nav_icons,
     font-size: 0.875rem;
   }
 
+  .front-text {
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+    margin: 0;
+    top: 25%;
+    width: 100%;
+  }
+
   .front-text h1 {
-    font-size: 2.1875rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .front-text p {
+    display: none;
+  }
+
+  .front-text .changing-image-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .front-text a {
+    margin-top: 10px;
   }
 }
 
@@ -484,6 +568,10 @@ nav .nav_icons,
 
   #nav .nav-links a {
     font-size: 1.5rem;
+  }
+
+  .lower-heading {
+    font-size: 1.75rem;
   }
 
   .mobile-nav-wrapper {
