@@ -29,6 +29,31 @@ section.discography > div {
   margin-top: 3.125rem;
 }
 
+section.discography .heading-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+}
+
+.artist-intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.artist-intro .heading-text {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.artist-intro .heading-text span {
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
 section.discography > div > div {
   max-width: 33%;
   flex: 0 0 33%;
@@ -47,11 +72,6 @@ section.discography > div > div > a > p {
 }
 section.discography > div > div > a > h2 {
   margin-top: 0.1875rem;
-}
-
-.artist-intro {
-  display: flex;
-  justify-content: center;
 }
 
 footer {

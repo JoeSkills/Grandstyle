@@ -76,22 +76,28 @@
     </header>
     <section class="discography">
       <h1>Our Music</h1>
-      <p>Get Access To The Top Music In Nigeria</p>
+      <p>Nigeria's Top Music</p>
       <div class="artist-intro">
         <img
+          class="heading-image"
           decoding="async"
           src="{{ image }}"
           alt="Person Recording In A Studio"
         />
-        <h2>Enjoy Songs By {{ name }}</h2>
+        <h2 class="heading-text">
+          Enjoy Songs By
+          <span>
+            {{ name }}
+          </span>
+        </h2>
       </div>
       <div>
         {%- for song in songs -%}
         <div>
-          <a href="/discography/artist/{{ song.title }}">
+          <a href="">
             <img
               decoding="async"
-              src="{{ song.image }}"
+              src="/{{ song.image }}"
               alt="Person Recording In A Studio"
             />
 

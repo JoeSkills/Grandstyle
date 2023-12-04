@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: Joseph-Updates
-media_folder: 'public/assets/image'
+media_folder: 'public/assets'
 public_folder: 'assets/artist'
 collections:
   - name: 'artist'
