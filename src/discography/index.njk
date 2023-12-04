@@ -10,7 +10,7 @@ layout: 'base.njk'
   <div>
     {%- for artist in collections.artist -%}
     <div>
-      <a href="/discography/artist/{{ artist.data.slug }}">
+      <a href="/discography/artist/{{ artist.url }}">
         <img
           decoding="async"
           src="{{ artist.data.image }}"
