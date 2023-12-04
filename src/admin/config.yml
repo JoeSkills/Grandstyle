@@ -8,7 +8,7 @@ collections:
     label: 'Artist'
     folder: 'src/artist'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}_{{name}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{second}}'
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
