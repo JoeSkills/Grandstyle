@@ -54,6 +54,23 @@ section.discography .heading-image {
   font-size: 1.875rem;
 }
 
+.song-social-links {
+  margin-top: 0.9375rem;
+}
+
+.song-social-links a {
+  padding: 0.625rem;
+  background-color: #fff;
+  color: #c74334;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  height: 3.125rem;
+  width: 3.125rem;
+  text-align: center;
+  display: inline-block;
+  margin-left: 0.3125rem;
+}
+
 section.discography > div > div {
   max-width: 33%;
   flex: 0 0 33%;
