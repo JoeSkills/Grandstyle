@@ -6,7 +6,7 @@ public_folder: '/assets'
 collections:
   - name: 'artist'
     label: 'Artist'
-    folder: 'src/artist'
+    folder: 'src/discography/artist'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{second}}'
     fields:

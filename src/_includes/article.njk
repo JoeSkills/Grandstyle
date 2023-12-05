@@ -35,16 +35,6 @@
     />
   </head>
   <body>
-    <div id="preloader">
-      <div class="spinner">
-        <i class="fas fa-circle-notch fa-spin"></i>
-      </div>
-      <div id="loading-text">Loading...</div>
-      <div id="company-name">Grandstyle Ent.</div>
-      <div id="promo-text">
-        Your Gateway to Premier Entertainment Experiences
-      </div>
-    </div>
     <header>
       <nav id="nav">
         <div class="reach-out-nav">
@@ -60,7 +50,7 @@
               <span class="react-out-nav-content-text">08128795195</span>
             </a>
           </span>
-          <span>
+          <span class="social-links">
             Social Media:
             <a>
               <i class="fab fa-facebook"></i>
@@ -124,7 +114,7 @@
         <div class="author-details">
           <i class="far fa-calendar"></i>
 
-          {{ date }}
+          {{ date | postDate }}
         </div>
         <h2 class="blog-content-title">
           {{ title }}

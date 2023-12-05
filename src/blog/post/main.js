@@ -1,11 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Simulate a delay (you can replace this with actual loading tasks)
-  setTimeout(function () {
-    // Hide the preloader
-    document.getElementById('preloader').style.display = 'none';
-  }, 2000); // Adjust the duration as needed
-});
-
 document.addEventListener('scroll', () => {
   const navigationBar = document.querySelector('#nav');
 
