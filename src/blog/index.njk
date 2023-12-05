@@ -176,7 +176,9 @@
           </div>
           <div class="featured-post-content">
             <div class="featured-post-author-desc">
-              <span><i class="far fa-calendar"></i> {{ post.data.date }} </span>
+              <span
+                ><i class="far fa-calendar"></i> {{ post.data.date | postDate }}
+              </span>
               <span
                 ><i class="fas fa-pencil-alt"></i> {{ post.data.author }}
               </span>
@@ -187,7 +189,7 @@
             <div class="featured-post-desc text-cutter">
               {{ post.data.description }}
             </div>
-            <a href="/blog/post/{{ post.url }}"> Read More </a>
+            <a href="{{ post.url }}"> Read More </a>
           </div>
         </div>
         {%- endfor %}
