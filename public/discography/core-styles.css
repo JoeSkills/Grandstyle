@@ -198,6 +198,11 @@ header {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+::selection {
+  background-color: #c74334;
+  color: #fff;
+}
+
 .navbar {
   display: none;
 }
