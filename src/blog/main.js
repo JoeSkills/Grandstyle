@@ -11,16 +11,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-document.addEventListener('scroll', () => {
-  const navigationBar = document.querySelector('#nav');
-
-  if (window.scrollY > 0) {
-    navigationBar.classList.add('scrolled');
-  } else {
-    navigationBar.classList.remove('scrolled');
-  }
-});
-
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('#nav');
 hamburger.addEventListener('click', () => {

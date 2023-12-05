@@ -365,15 +365,16 @@ nav .nav_icons,
   font-size: 28px;
   font-weight: 900;
   margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .front-text p {
-  font-size: 18px;
+  font-size: 0.875rem;
   color: #fff;
-  text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: 800;
   margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .front-text .changing-image-wrapper {

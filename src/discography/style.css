@@ -13,7 +13,7 @@ section.discography > h1 {
 
 section.discography > p {
   font-weight: 900;
-  font-size: 3.125rem;
+  font-size: 1.75rem;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
@@ -126,6 +126,10 @@ footer > .social-icons-links > div > .social-icons-link {
   section.discography > div > div {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  section.discography > p {
+    font-size: 1.125rem;
   }
 }
 

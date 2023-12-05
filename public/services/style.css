@@ -39,17 +39,6 @@
   background-color: #212121;
 }
 
-.services .text-overlay {
-  background: url('assets/liquifer.png');
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.05;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
 .services-section {
   text-align: center;
 }
@@ -62,7 +51,7 @@
 
 .services-section .lower-heading {
   font-weight: 900;
-  font-size: 3.125rem;
+  font-size: 1.75rem;
   color: #343a40;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
@@ -207,6 +196,11 @@ footer > .social-icons-links > div > .social-icons-link {
 
 /*MOBILE VERSION*/
 @media only screen and (max-width: 750px) {
+  .services-section .lower-heading {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
   .services {
     padding-inline: 1.25rem;
   }

@@ -19,7 +19,7 @@
 
 .about-us-section .lower-heading {
   font-weight: 900;
-  font-size: 3.125rem;
+  font-size: 1.75rem;
   color: #fff;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
@@ -157,6 +157,12 @@ footer > .social-icons-links > div > .social-icons-link {
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 750px) {
+  .about-us-section .lower-heading {
+    font-size: 1.125rem;
+    width: fit-content;
+    padding-inline: 0.625rem;
+  }
+
   .about-us-section {
     padding: 0px 20px;
     flex-direction: column;

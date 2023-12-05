@@ -57,16 +57,23 @@ const changingData = [
   {
     h1: 'Experience the Beat',
     p: 'Discover new sounds with GrandStyle Entertainment',
-    img: './assets/about-us-1-1150.webp',
+    img: './assets/services-image-1.jpeg',
     link: '/services/',
     linkText: 'Get To Know More',
   },
   {
-    h1: 'Elevate Your Music Journey',
+    h1: 'Teesol',
     p: 'Immerse yourself in the world of rhythm and creativity',
-    img: './assets/background-image-1-1150.webp',
-    link: '/services',
-    linkText: 'Checkout Our Services',
+    img: './assets/teesol-1.JPG',
+    link: '/discography/',
+    linkText: 'Get Access To Top Music',
+  },
+  {
+    h1: 'Prince Gadaffi Gold',
+    p: 'Immerse yourself in the world of rhythm and creativity',
+    img: './assets/prince-gad.JPG',
+    link: '/discography/',
+    linkText: 'Get Access To Top Music',
   },
 ];
 
@@ -83,6 +90,7 @@ function changeTextAnimation() {
   changingH1.textContent = currentData.h1;
   changingP.textContent = currentData.p;
   changingButton.textContent = currentData.linkText;
+  changingButton.href = currentData.link;
   changingImg.src = currentData.img;
   currentDataIndex = (currentDataIndex + 1) % changingData.length;
 }
