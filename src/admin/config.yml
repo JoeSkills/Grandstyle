@@ -23,13 +23,40 @@ collections:
           - { name: 'artist', label: 'Artist', widget: 'string' }
           - { name: 'image', label: 'Image', widget: 'image' }
           - { name: 'tags', label: 'Tags', widget: 'list' }
+          - label: 'Social Links'
+            name: 'socialLinks'
+            widget: 'list'
+            required: false
+            fields:
+              - name: 'spotify'
+                label: 'Spotify'
+                fields:
+                  - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+              - name: 'youtube'
+                label: 'Youtube'
+                fields:
+                  - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+              - name: 'tiktok'
+                label: 'TikTok'
+                fields:
+                  - { name: 'linkURL', label: 'Link URL', widget: 'string' }
       - label: 'Social Links'
         name: 'socialLinks'
         widget: 'list'
         required: false
         fields:
-          - { name: 'linkName', label: 'Link Name', widget: 'string' }
-          - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+          - name: 'spotify'
+            label: 'Spotify'
+            fields:
+              - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+          - name: 'youtube'
+            label: 'Youtube'
+            fields:
+              - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+          - name: 'tiktok'
+            label: 'TikTok'
+            fields:
+              - { name: 'linkURL', label: 'Link URL', widget: 'string' }
 
   - name: 'post'
     label: 'Post'
