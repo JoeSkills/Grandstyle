@@ -341,14 +341,6 @@ nav .nav_icons,
   display: none;
 }
 
-.dynamic-element {
-  position: absolute;
-  z-index: 200;
-  color: #fff;
-
-  animation: dynamicAnimation 11s infinite linear; /* Adjusted to 8 seconds */
-}
-
 .front-text {
   position: absolute;
   top: 35%;
@@ -464,12 +456,12 @@ nav .nav_icons,
   left: 50%;
   background-color: #c74334;
   display: block;
-  padding: 0.9375rem 1.5625rem;
-  font-size: 1.125rem;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 700;
   position: absolute;
-  animation: fadeIn 10s infinite;
+  font-family: 'Poppins', sans-serif;
 }
 
 .swiper {
@@ -638,5 +630,13 @@ nav .nav_icons,
   .scroll-down-btn {
     font-size: 18px;
     top: 87%;
+  }
+
+  .header-cta-btn {
+    font-size: 1.125rem;
+    width: 90%;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
   }
 }

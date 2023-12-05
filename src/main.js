@@ -75,6 +75,8 @@ const changingH1 = document.querySelector('h1.changing-text');
 const changingP = document.querySelector('p.changing-text');
 const changingImg = document.querySelector('.changing-image');
 const changingButton = document.querySelector('.changing-button');
+const headerCtaBtn = document.querySelector('.header-cta-btn');
+const changingWrapperEl = document.querySelector('.front-text');
 
 function changeTextAnimation() {
   const currentData = changingData[currentDataIndex];
@@ -84,5 +86,16 @@ function changeTextAnimation() {
   changingImg.src = currentData.img;
   currentDataIndex = (currentDataIndex + 1) % changingData.length;
 }
+
+function checkAnimationProgress() {
+  const computedStyle = getComputedStyle(changingWrapperEl);
+  const opacity = parseFloat(computedStyle.opacity);
+
+  headerCtaBtn.style.display = opacity === 0 ? 'block' : 'none';
+
+  requestAnimationFrame(checkAnimationProgress);
+}
+
+checkAnimationProgress();
 
 setInterval(changeTextAnimation, 10000);
