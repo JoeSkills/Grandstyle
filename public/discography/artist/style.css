@@ -71,23 +71,33 @@ section.discography .heading-image {
   margin-left: 0.3125rem;
 }
 
-section.discography > div > div {
+.song-data-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.125rem;
+}
+
+.song-data-content {
   max-width: 33%;
   flex: 0 0 33%;
   padding-inline: 0.625rem;
 }
 
-section.discography > div > div > a > img {
-  width: 100%;
+section.discography .song-image-wrapper {
   height: 18.75rem;
-  object-fit: cover;
 }
 
-section.discography > div > div > a > p {
+.artist-image-wrapper .song-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+section.discography .song-desc {
   font-size: 0.8125rem;
   color: #ddd;
 }
-section.discography > div > div > a > h2 {
+section.discography .song-name {
   margin-top: 0.1875rem;
 }
 
@@ -137,12 +147,12 @@ footer > .social-icons-links > div > .social-icons-link {
 
 /*TABLET VERSION*/
 @media only screen and (max-width: 950px) {
-  section.discography > div {
+  section.discography .song-data-content-wrapper {
     gap: 2.1875rem;
     justify-content: center;
   }
 
-  section.discography > div > div {
+  section.discography .song-data-content {
     max-width: 50%;
     flex: 0 0 50%;
     padding-inline: 0;
@@ -165,7 +175,7 @@ footer > .social-icons-links > div > .social-icons-link {
     padding-inline: 1.25rem;
   }
 
-  section.discography > div > div {
+  section.discography .song-data-content {
     flex: 0 0 100%;
     max-width: 100%;
   }

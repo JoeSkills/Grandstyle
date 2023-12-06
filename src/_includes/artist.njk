@@ -92,16 +92,17 @@
           </span>
         </h2>
       </div>
-      <div>
+      <div class="song-data-content-wrapper">
         {%- for song in songs -%}
-        <div>
+        <div class="song-data-content">
           <img
             decoding="async"
+            class="song-image"
             src="{{ song.image }}"
             alt="Person Recording In A Studio"
           />
 
-          <h2>{{ song.title }}</h2>
+          <h2 class="song-name">{{ song.title }}</h2>
 
           <div class="song-social-links">
             {%- for socialLink in song.socialLinks -%}
