@@ -7,18 +7,19 @@ layout: 'base.njk'
 <section class="discography">
   <h1>Our Music</h1>
   <p>Get Access To The Top Music In Nigeria</p>
-  <div>
+  <div class="artist-data-content-wrapper">
     {%- for artist in collections.artist -%}
-    <div>
+    <div lass="artist-data-content">
       <a href="{{ artist.url }}">
         <img
           decoding="async"
+          class="artist-image"
           src="{{ artist.data.image }}"
           alt="Person Recording In A Studio"
         />
 
-        <h2>{{ artist.data.name }}</h2>
-        <p>
+        <h2 class="artist-name">{{ artist.data.name }}</h2>
+        <p class="artist-desc">
           {{ artist.data.description }}
         </p>
       </a>
