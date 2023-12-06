@@ -137,4 +137,10 @@ footer > .social-icons-links > div > .social-icons-link {
   .blog-content {
     width: 100%;
   }
+
+  .author-card {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.1875rem;
+  }
 }

@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Grandstyle</title>
     <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico" />
-    <link rel="stylesheet" href="../core-styles.css" />
+    <link rel="stylesheet" href="core-styles.css" />
     <link
       rel="stylesheet"
-      href="../style.css"
+      href="style.css"
       media="print"
       onload="this.media='all'; this.onload=null;"
     />
     <noscript>
-      <link rel="stylesheet" href="../style.css" />
+      <link rel="stylesheet" href="style.css" />
     </noscript>
 
     <link
@@ -84,50 +84,18 @@
         </div>
       </div>
     </nav>
-    <section class="blog-content-wrapper">
-      <img src="../../../assets/about-us-1-1150.webp" alt="" class="blog-content-image" />
 
-      <div class="blog-content">
-        <div class="author-details">
-          <i class="far fa-calendar"></i>
-
-          Dec 5, 2023
-        </div>
-        <h2 class="blog-content-title">
-          Unleashing the Legend: John Wick
-        </h2>
-
-        <div class="blog-content-text">
-          <p>John Wick, portrayed by Keanu Reeves, is a legendary character in the realm of action movies. This blog post explores the intense world of John Wick, his iconic portrayal by Reeves, and the impact of the franchise on the action genre.</p>
-<h2>The Beginning</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel tellus consequat condimentum. ...</p>
-<h2>Keanu Reeves's Performance</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel tellus consequat condimentum. ...</p>
-<h2>Legacy and Impact</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel tellus consequat condimentum. ...</p>
-<hr>
-<p>Feel free to customize the content, add more sections, and include addit</p>
-
-        </div>
-
-        <div class="author-card">
-          <img
-            class="author-image"
-            src="../../../assets/background-image-2-600.webp"
-            alt="Author Image"
-          />
-          <div class="author-details">
-            <div class="author-name">Joseph Oritseweyinmi</div>
-            <p class="author-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel tellus consequat condimentum. ...
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="disqus-wrapper">
-        <div id="disqus_thread"></div>
-      </div>
-    </section>
+    <form class="search-container">
+      <h1>Blog Search</h1>
+      <input
+        type="text"
+        id="searchInput"
+        oninput="searchPosts()"
+        placeholder="Explore our blog with a quick search..."
+      />
+      <button type="submit" onclick="searchPosts()">Find Post</button>
+      <div id="search-results"></div>
+    </form>
 
     <footer>
       <div>
@@ -162,40 +130,6 @@
       </div>
       <p>&copy; 2023 GrandStyle Entertainment Company. All rights reserved.</p>
     </footer>
-    <script type="module" src="../main.js"></script>
-    <script>
-      /**
-       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-      (function () {
-        // DON'T EDIT BELOW THIS LINE
-        var d = document,
-          s = d.createElement('script');
-        s.src = 'https://playful-pika-140aca-netlify-app.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
-      }
-    </script>
-    <noscript
-      >Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript"
-        >comments powered by Disqus.</a
-      ></noscript
-    >
+    <script src="main.js"></script>
   </body>
 </html>

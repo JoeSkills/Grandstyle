@@ -1,0 +1,21 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+[
+  {%- for post in collections.post -%}
+    {
+      "url": "{{ post.url | url }}",
+      "data": {
+        "title": "{{ post.data.title  }}",
+        "date": "{{ post.data.date  }}",
+        "description": "{{ post.data.description  }}",
+        "image": "{{ post.data.image  }}",
+        "authorImage": "{{ post.data.authorImage  }}",
+        "authorName": "{{ post.data.authorName  }}",
+        "authorDescription": "{{ post.data.authorDescription  }}",
+        "tags": "{{ post.data.tags }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor %}
+]
