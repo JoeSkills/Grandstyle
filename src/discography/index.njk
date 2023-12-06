@@ -11,12 +11,14 @@ layout: 'base.njk'
     {%- for artist in collections.artist -%}
     <div lass="artist-data-content">
       <a href="{{ artist.url }}">
-        <img
-          decoding="async"
-          class="artist-image"
-          src="{{ artist.data.image }}"
-          alt="Person Recording In A Studio"
-        />
+        <div class="artist-image-wrapper">
+          <img
+            decoding="async"
+            class="artist-image"
+            src="{{ artist.data.image }}"
+            alt="Person Recording In A Studio"
+          />
+        </div>
 
         <h2 class="artist-name">{{ artist.data.name }}</h2>
         <p class="artist-desc">

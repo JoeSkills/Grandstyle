@@ -35,10 +35,14 @@ section.discography > p {
   padding-inline: 0.625rem;
 }
 
-section.discography .artist-image {
-  width: 100%;
+section.discography .artist-image-wrapper {
   height: 18.75rem;
+}
+
+.artist-image-wrapper .artist-image {
+  width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 section.discography .artist-desc {
@@ -112,12 +116,12 @@ footer > .social-icons-links > div > .social-icons-link {
 
 /*TABLET VERSION*/
 @media only screen and (max-width: 950px) {
-  section.discography > div {
+  section.discography .artist-data-content-wrapper {
     gap: 2.1875rem;
     justify-content: center;
   }
 
-  section.discography > div > div {
+  section.discography .artist-data-content {
     max-width: 50%;
     flex: 0 0 50%;
     padding-inline: 0;
@@ -140,7 +144,7 @@ footer > .social-icons-links > div > .social-icons-link {
     padding-inline: 1.25rem;
   }
 
-  section.discography > div > div {
+  section.discography .artist-data-content {
     flex: 0 0 100%;
     max-width: 100%;
   }
