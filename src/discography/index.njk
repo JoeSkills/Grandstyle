@@ -23,12 +23,14 @@ layout: 'base.njk'
         </p>
       </a>
       <div class="artist-social-links">
-        <a><i class="fab fa-youtube"></i></a>
+        {%- for socialLink in artist.data.socialLinks -%}
+        <a href="{{ socialLink.youtube }}"><i class="fab fa-youtube"></i></a>
 
-        <a><i class="fab fa-tiktok"></i></a>
+        <a href="{{ socialLink.tiktok }}"><i class="fab fa-tiktok"></i></a>
 
-        <a><i class="fab fa-spotify"></i></a>
+        <a href="{{ socialLink.spotify }}"><i class="fab fa-spotify"></i></a>
       </div>
+      {%- endfor %}
     </div>
     {%- endfor %}
   </div>

@@ -105,11 +105,18 @@
             <h2>{{ song.title }}</h2>
           </a>
           <div class="song-social-links">
-            <a><i class="fab fa-youtube"></i></a>
+            {%- for socialLink in socialLinks -%}
+            <a href="{{ socialLink.youtube }}"
+              ><i class="fab fa-youtube"></i
+            ></a>
 
-            <a><i class="fab fa-tiktok"></i></a>
+            <a href="{{ socialLink.tiktok }}"><i class="fab fa-tiktok"></i></a>
 
-            <a><i class="fab fa-spotify"></i></a>
+            <a href="{{ socialLink.spotify }}"
+              ><i class="fab fa-spotify"></i
+            ></a>
+
+            {%- endfor %}
           </div>
         </div>
         {%- endfor %}
