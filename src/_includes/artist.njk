@@ -95,17 +95,16 @@
       <div>
         {%- for song in songs -%}
         <div>
-          <a href="">
-            <img
-              decoding="async"
-              src="/{{ song.image }}"
-              alt="Person Recording In A Studio"
-            />
+          <img
+            decoding="async"
+            src="{{ song.image }}"
+            alt="Person Recording In A Studio"
+          />
 
-            <h2>{{ song.title }}</h2>
-          </a>
+          <h2>{{ song.title }}</h2>
+
           <div class="song-social-links">
-            {%- for socialLink in socialLinks -%}
+            {%- for socialLink in song.socialLinks -%}
             <a href="{{ socialLink.youtube }}"
               ><i class="fab fa-youtube"></i
             ></a>
