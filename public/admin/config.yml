@@ -19,7 +19,7 @@ collections:
         widget: 'list'
         required: false
         fields:
-          - { name: 'title', label: 'Title', widget: 'String' }
+          - { name: 'title', label: 'Title', widget: 'string' }
           - { name: 'artist', label: 'Artist', widget: 'string' }
           - { name: 'image', label: 'Image', widget: 'image' }
           - { name: 'tags', label: 'Tags', widget: 'list' }
@@ -40,6 +40,14 @@ collections:
                 label: 'TikTok'
                 fields:
                   - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+              - name: 'audiomack'
+                label: 'Audiomack'
+                fields:
+                  - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+              - name: 'applemusic'
+                label: 'Apple Music'
+                fields:
+                  - { name: 'linkURL', label: 'Link URL', widget: 'string' }
       - label: 'Social Links'
         name: 'socialLinks'
         widget: 'list'
@@ -55,6 +63,14 @@ collections:
               - { name: 'linkURL', label: 'Link URL', widget: 'string' }
           - name: 'tiktok'
             label: 'TikTok'
+            fields:
+              - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+          - name: 'audiomack'
+            label: 'Audiomack'
+            fields:
+              - { name: 'linkURL', label: 'Link URL', widget: 'string' }
+          - name: 'applemusic'
+            label: 'Apple Music'
             fields:
               - { name: 'linkURL', label: 'Link URL', widget: 'string' }
 
