@@ -4,7 +4,7 @@ description: In the world of film-making, cinematography plays a crucial role in
   capturing visually stunning scenes that enhance storytelling.
 author: Nicholas Idoko
 tags:
-  - post
+  - featured
 date: 2023-12-06T22:43:26.671Z
 image: /assets/a-guide-to-cinematography-equipment-in-nigeria1-768x768.jpg
 authorName: Nicholas Idoko
