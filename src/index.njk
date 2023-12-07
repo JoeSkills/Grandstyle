@@ -258,8 +258,9 @@
     <section class="blog-preview">
       <h2>Our Blog</h2>
       <p class="lower-heading">Checkout Our Latest Content</p>
+      {% set atPost = 0 %}
       <div class="blog-content-wrapper">
-        {%- for post in collections.featured -%}
+        {%- for post in collections.featured -%} {% if atPost < 3 %}
         <div class="blog-content load-in">
           <img
             src="{{ post.data.image }}"
@@ -280,7 +281,7 @@
             <a href="{{ post.url }}">Read More</a>
           </div>
         </div>
-        {%- endfor %}
+        {% endif%} {% set atPost = atPost + 1 %} {%- endfor %}
       </div>
       <a href="/blog/" class="visit-blog-cta-btn"> Visit Our Blog </a>
     </section>
