@@ -502,7 +502,7 @@ nav .nav_icons,
     opacity: 0;
     transform: translateY(20px) translateX(-50%); /* Move text up */
   }
-  50%,
+  60%,
   75% {
     opacity: 1;
     transform: translateY(0) translateX(-50%); /* Bring text down */

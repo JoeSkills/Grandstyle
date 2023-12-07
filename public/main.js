@@ -1,10 +1,18 @@
 const swiper = new Swiper('.swiper', {
   autoplay: {
-    delay: 8000,
+    delay: 10000,
     disableOnInteraction: false,
   },
   grabCursor: true,
   loop: true,
+  on: {
+    slideNextTransitionEnd: (swiper) => {
+      changeTextAnimation(1);
+    },
+    slidePrevTransitionEnd: (swiper) => {
+      changeTextAnimation(-1);
+    },
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -105,16 +113,3 @@ function checkAnimationProgress() {
 }
 
 checkAnimationProgress();
-
-setInterval(changeTextAnimation, 10000);
-
-const swiperBtnPrev = document.querySelector('.swiper-button-prev');
-const swiperBtnNext = document.querySelector('.swiper-button-next');
-
-swiperBtnPrev.addEventListener('click', () => {
-  changeTextAnimation(-1);
-});
-
-swiperBtnNext.addEventListener('click', () => {
-  changeTextAnimation();
-});
