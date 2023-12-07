@@ -134,13 +134,27 @@ footer > .social-icons-links > div > .social-icons-link {
     padding-inline: 1.25rem;
   }
 
+  .blog-content-image {
+    padding-right: 0;
+  }
+
   .blog-content {
     width: 100%;
+  }
+
+  .blog-content-title {
+    font-size: 2rem;
+    word-break: break-all;
   }
 
   .author-card {
     flex-direction: column;
     align-items: start;
     gap: 1.1875rem;
+  }
+
+  .author-image {
+    width: 100%;
+    height: 18.75rem;
   }
 }
