@@ -87,10 +87,9 @@ section.discography .song-image-wrapper {
   height: 18.75rem;
 }
 
-.artist-image-wrapper .song-image {
+.song-image {
   width: 100%;
   object-fit: cover;
-  height: 100%;
 }
 
 section.discography .song-desc {

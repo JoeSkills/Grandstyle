@@ -498,7 +498,7 @@ nav .nav_icons,
 
 @keyframes fadeIn {
   0%,
-  25% {
+  7% {
     opacity: 0;
     transform: translateY(20px) translateX(-50%); /* Move text up */
   }
