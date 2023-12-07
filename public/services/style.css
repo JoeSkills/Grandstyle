@@ -1,19 +1,10 @@
-.gallery {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #343a40;
-}
-
-.gallery .gallery-image-container {
+.gallery-image-container {
   flex: 0 0 33%;
   max-width: 33%;
-
   position: relative;
 }
 
-.gallery .gallery-image-container .gallery-text {
+.gallery-image-container .gallery-text {
   position: absolute;
   bottom: 10px; /* Adjusted distance from the bottom */
   right: 10px; /* Adjusted distance from the right */
@@ -24,7 +15,7 @@
   font-weight: 700;
 }
 
-.gallery .gallery-image-container img {
+.gallery-image-container img {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -44,15 +35,16 @@
 }
 .services-section h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker';
+  font-family: 'Nunito Sans', sans-serif;
   color: #fff;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .services-section .lower-heading {
   font-weight: 900;
   font-size: 1.75rem;
-  color: #343a40;
+  color: #fff;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
@@ -61,12 +53,11 @@
   width: fit-content;
   margin-inline: auto;
   padding-inline: 1.25rem;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
 }
 
 .services-content-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: #fff;
   margin-top: 2.1875rem;
   gap: 0.9375rem;
@@ -74,10 +65,10 @@
 }
 .services-content-wrapper > div {
   max-width: 33%;
-  flex: 0.333333%;
+  flex: 33%;
 }
 
-.services-content-wrapper i {
+.services-content i {
   font-size: 2rem;
   color: #ddd;
 }
@@ -87,20 +78,20 @@
   padding: 1.25rem;
 }
 
-.services-content-wrapper h2,
-.services-content-wrapper p {
+.services-content h2,
+.services-content p {
   margin-top: 0.9375rem;
   font-family: 'Kanit', sans-serif;
 }
 
-.services-content-wrapper h2 {
+.services-content h2 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
   margin-top: 1.875rem;
 }
 
-.services-content-wrapper p {
+.services-content p {
   line-height: 1.5556em;
   color: #ddd;
 }

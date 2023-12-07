@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
   autoplay: {
-    delay: 4000,
+    delay: 8000,
     disableOnInteraction: false,
   },
   grabCursor: true,
@@ -55,19 +55,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const changingData = [
   {
-    h1: 'Experience the Beat',
-    p: 'Discover new sounds with GrandStyle Entertainment',
-    img: './assets/services-image-1.jpeg',
-    link: '/services/',
-    linkText: 'Get To Know More',
-  },
-  {
     h1: 'Teesol',
     p: 'Immerse yourself in the world of rhythm and creativity',
     img: './assets/teesol-1.JPG',
     link: '/discography/',
     linkText: 'Get Access To Top Music',
   },
+
+  {
+    h1: 'Experience the Beat',
+    p: 'Discover new sounds with GrandStyle Entertainment',
+    img: './assets/services-image-1.jpeg',
+    link: '/services/',
+    linkText: 'Get To Know More',
+  },
+
   {
     h1: 'Prince Gadaffi Gold',
     p: 'Immerse yourself in the world of rhythm and creativity',
@@ -80,19 +82,17 @@ const changingData = [
 let currentDataIndex = 0;
 const changingH1 = document.querySelector('h1.changing-text');
 const changingP = document.querySelector('p.changing-text');
-const changingImg = document.querySelector('.changing-image');
 const changingButton = document.querySelector('.changing-button');
 const headerCtaBtn = document.querySelector('.header-cta-btn');
 const changingWrapperEl = document.querySelector('.front-text');
 
-function changeTextAnimation() {
+function changeTextAnimation(animationVal = 1) {
   const currentData = changingData[currentDataIndex];
   changingH1.textContent = currentData.h1;
   changingP.textContent = currentData.p;
   changingButton.textContent = currentData.linkText;
   changingButton.href = currentData.link;
-  changingImg.src = currentData.img;
-  currentDataIndex = (currentDataIndex + 1) % changingData.length;
+  currentDataIndex = (currentDataIndex + animationVal) % changingData.length;
 }
 
 function checkAnimationProgress() {
@@ -107,3 +107,14 @@ function checkAnimationProgress() {
 checkAnimationProgress();
 
 setInterval(changeTextAnimation, 10000);
+
+const swiperBtnPrev = document.querySelector('.swiper-button-prev');
+const swiperBtnNext = document.querySelector('.swiper-button-next');
+
+swiperBtnPrev.addEventListener('click', () => {
+  changeTextAnimation(-1);
+});
+
+swiperBtnNext.addEventListener('click', () => {
+  changeTextAnimation();
+});

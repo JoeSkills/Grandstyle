@@ -1,13 +1,4 @@
 @font-face {
-  font-family: 'Permanent Marker';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-    url('fonts/permanent-marker-v16-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
-}
-
-@font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
@@ -169,6 +160,103 @@
   src: url('fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* nunito-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/nunito-sans-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/nunito-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/nunito-sans-v15-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/nunito-sans-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./fonts/nunito-sans-v15-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/nunito-sans-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./fonts/nunito-sans-v15-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/nunito-sans-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./fonts/nunito-sans-v15-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/nunito-sans-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./fonts/nunito-sans-v15-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/nunito-sans-v15-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -198,18 +286,6 @@ header {
   background-position: center;
   position: relative;
   font-family: 'Space Grotesk', sans-serif;
-}
-
-header::after {
-  content: '';
-  background: url('assets/p_paint-border-light.png') no-repeat;
-  background-position: center 0;
-  background-size: cover;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 142px;
-  z-index: 300;
 }
 
 .navbar {
@@ -354,12 +430,10 @@ nav .nav_icons,
   z-index: 100;
   text-align: left;
   max-width: 50%;
-  display: flex;
   margin-inline: auto;
   gap: 20px;
-  align-items: center;
-  justify-content: start;
   animation: fadeIn 10s infinite;
+  text-align: center;
 }
 
 .front-text h1 {
@@ -380,22 +454,6 @@ nav .nav_icons,
   font-weight: 800;
   margin-top: 8px;
   font-family: 'Poppins', sans-serif;
-}
-
-.front-text .changing-image-wrapper {
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-
-.front-text img {
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .front-text a {
@@ -419,7 +477,7 @@ nav .nav_icons,
   cursor: pointer;
   display: block;
   text-align: center;
-  animation: bounce 1.5s infinite; /* Adjusted animation duration */
+  animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
@@ -514,21 +572,15 @@ nav .nav_icons,
   }
 
   .front-text {
-    flex-direction: column;
-    gap: 8px;
     max-width: 100%;
     margin: 0;
-    top: 25%;
+    top: 35%;
     width: 100%;
   }
 
   .front-text h1 {
     font-size: 1.5rem;
     text-align: center;
-  }
-
-  .front-text p {
-    display: none;
   }
 
   .front-text .changing-image-wrapper {
@@ -538,6 +590,8 @@ nav .nav_icons,
 
   .front-text a {
     margin-top: 10px;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 

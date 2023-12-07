@@ -21,9 +21,6 @@ layout: 'base.njk'
         </div>
 
         <h2 class="artist-name">{{ artist.data.name }}</h2>
-        <p class="artist-desc">
-          {{ artist.data.description }}
-        </p>
       </a>
       <div class="artist-social-links">
         {%- for socialLink in artist.data.socialLinks -%}

@@ -1,7 +1,7 @@
 .about-us {
   width: 100%;
   padding-block: 6.25rem;
-  background-color: #777777;
+  background-color: #343a40;
 }
 .about-us-section {
   text-align: left;
@@ -13,7 +13,8 @@
 }
 .about-us-section h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -26,7 +27,6 @@
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
 }
 
 .about-us-section p {
@@ -99,7 +99,8 @@
 
 .why-choose-us h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   font-size: 2rem;
   text-align: center;
 }
@@ -107,14 +108,13 @@
 .why-choose-us .lower-heading {
   font-weight: 900;
   font-size: 1.75rem;
-  color: #343a40;
+  color: #fff;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
   text-align: center;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
 }
 
 .why-choose-us-content-wrapper {
@@ -175,7 +175,7 @@
 }
 .services-section h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker';
+  font-family: 'Nunito Sans';
   color: #fff;
   font-size: 2rem;
 }
@@ -183,16 +183,13 @@
 .services-section .lower-heading {
   font-weight: 900;
   font-size: 1.75rem;
-  color: #343a40;
+  color: #fff;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
-  width: fit-content;
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
+  text-align: center;
 }
 
 .services-content-wrapper {
@@ -265,19 +262,6 @@ section.contact-us {
   padding: 6.25rem 3.125rem;
 }
 
-section.contact-us::after {
-  content: '';
-  background: url('assets/p_paint-border-light.png') no-repeat;
-  background-position: center 0;
-  background-size: cover;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 142px;
-  z-index: 300;
-  left: 0;
-}
-
 section.contact-us > div > * {
   max-width: 50%;
   flex: 0 0 50%;
@@ -301,11 +285,12 @@ section.contact-us > div > form {
 
 section.contact-us > div > form > .extra-form-info {
   font-size: 1rem;
-  color: #ddd;
+  color: #fff;
   max-width: 100%;
   flex: 0 0 100%;
   padding-bottom: 0.625rem;
   font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 section.contact-us > div > form > div > input,
@@ -377,7 +362,8 @@ section.contact-us > div > div > .contact-us-content > div > h3 {
 }
 
 section.contact-us > div > div > h2 {
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 2rem;
   color: #fff;
@@ -386,26 +372,24 @@ section.contact-us > div > div > h2 {
 section.contact-us > div > div > .lower-heading {
   font-weight: 900;
   font-size: 1.75rem;
-  color: #343a40;
+  color: #fff;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
   width: fit-content;
-  padding-inline: 1.25rem;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
 }
 
 section.blog-preview {
   padding: 6.25rem 3.125rem;
-  background-color: #777777;
+  background-color: #343a40;
 }
 
 section.blog-preview > h2 {
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Permanent Marker';
   color: #fff;
   font-size: 2rem;
 }
@@ -420,7 +404,6 @@ section.blog-preview > .lower-heading {
   letter-spacing: 2px;
   line-height: 1;
   width: fit-content;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
 }
 
 section.blog-preview > .blog-content-wrapper {
@@ -614,7 +597,10 @@ footer > .social-icons-links > div > .social-icons-link {
   .about-us-section .lower-heading {
     font-size: 1.125rem;
     width: fit-content;
-    padding-inline: 0.625rem;
+  }
+
+  .about-us-section .about-image {
+    display: none;
   }
 
   .why-choose-us .lower-heading {
@@ -624,6 +610,7 @@ footer > .social-icons-links > div > .social-icons-link {
   .services-section .lower-heading {
     font-size: 1.125rem;
     margin: 0;
+    text-align: left;
   }
 
   section.contact-us > div > div > .lower-heading {
@@ -632,7 +619,6 @@ footer > .social-icons-links > div > .social-icons-link {
 
   section.blog-preview > .lower-heading {
     font-size: 1.125rem;
-    padding-inline: 1.125rem;
   }
 
   .about-us-section {

@@ -1,7 +1,7 @@
 .about-us {
   width: 100%;
   padding-block: 6.25rem;
-  background-color: #777777;
+  background-color: #343a40;
 }
 .about-us-section {
   text-align: left;
@@ -13,7 +13,8 @@
 }
 .about-us-section h2 {
   text-transform: uppercase;
-  font-family: 'Permanent Marker';
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 2rem;
 }
 
@@ -26,7 +27,6 @@
   font-family: 'Kanit', sans-serif;
   letter-spacing: 2px;
   line-height: 1;
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
 }
 
 .about-us-section p {
@@ -165,7 +165,6 @@ footer > .social-icons-links > div > .social-icons-link {
   .about-us-section .lower-heading {
     font-size: 1.125rem;
     width: fit-content;
-    padding-inline: 0.625rem;
   }
 
   .about-us-section {
@@ -182,6 +181,7 @@ footer > .social-icons-links > div > .social-icons-link {
   .about-us-section > .about-image {
     flex: 1;
     max-width: 100%;
+    display: none;
   }
 }
 
