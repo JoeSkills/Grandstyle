@@ -296,7 +296,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.875rem 4.375rem;
+  padding: 1.875rem 3.125rem;
 
   z-index: 500;
   transition: 0.7s ease-in-out;
@@ -352,7 +352,7 @@ nav #logo h3 {
 }
 
 nav .nav-links {
-  font-size: 1rem;
+  font-size: 0.9375rem;
 }
 
 nav .nav-links a {
