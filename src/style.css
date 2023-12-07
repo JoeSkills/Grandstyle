@@ -478,12 +478,6 @@ footer > .social-icons-links > div > .social-icons-link {
     height: 18.75rem;
   }
 
-  .why-choose-us-content-wrapper > div {
-    flex: 1 0 calc(50% - 15px);
-    max-width: 50%;
-    justify-self: center;
-  }
-
   .services-content-wrapper {
     flex-direction: column;
   }
@@ -530,10 +524,6 @@ footer > .social-icons-links > div > .social-icons-link {
 
   .about-us-section .about-image {
     display: none;
-  }
-
-  .why-choose-us .lower-heading {
-    font-size: 1.125rem;
   }
 
   .services-section .lower-heading {
@@ -600,15 +590,6 @@ footer > .social-icons-links > div > .social-icons-link {
 
   .about-cta-btn {
     margin-top: 0.9375rem;
-  }
-
-  .why-choose-us {
-    padding-inline: 0.625rem;
-  }
-
-  .why-choose-us-content-wrapper > div {
-    flex: 1 0 100%;
-    max-width: 100%;
   }
 
   .services-section h2,
