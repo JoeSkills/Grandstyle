@@ -14,7 +14,7 @@ section.discography > h1 {
 
 section.discography > p {
   font-weight: 900;
-  font-size: 3.125rem;
+  font-size: 1.75rem;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Kanit', sans-serif;
@@ -45,9 +45,10 @@ section.discography .heading-image {
 .artist-intro .heading-text {
   font-size: 1.75rem;
   font-weight: 500;
+  text-align: center;
 }
 
-.artist-intro .heading-text span {
+.artist-intro .heading-text p {
   color: #ddd;
   text-transform: uppercase;
   font-weight: 700;
@@ -90,6 +91,7 @@ section.discography .song-image-wrapper {
 .song-image {
   width: 100%;
   object-fit: cover;
+  border-radius: 0.3125rem;
 }
 
 section.discography .song-desc {
@@ -142,6 +144,7 @@ footer > .social-icons-links > div > .social-icons-link {
   border: 1px solid #ddd;
   width: fit-content;
   display: inline-block;
+  border-radius: 50%;
 }
 
 /*TABLET VERSION*/
@@ -177,6 +180,10 @@ footer > .social-icons-links > div > .social-icons-link {
   section.discography .song-data-content {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  section.discography > p {
+    font-size: 1.125rem;
   }
 }
 

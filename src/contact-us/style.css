@@ -45,6 +45,7 @@ section.contact-us > div > form > div > textarea {
   width: 100%;
   color: #dee2e6;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-end-start-radius: 0.3125rem;
 }
 
 section.contact-us > div > form > div > input:focus,
@@ -76,6 +77,7 @@ section.contact-us > div > form > .message-btn-wrapper > button {
   background-color: #c74334;
   font-size: 1rem;
   font-weight: 700;
+  border-radius: 3.125rem;
 }
 
 section.contact-us > div > form > .message-btn-wrapper > button:hover {
@@ -90,6 +92,7 @@ section.contact-us > div > div {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   font-family: 'Kanit', sans-serif;
+  border-end-end-radius: 0.3125rem;
 }
 
 section.contact-us > div > div > .contact-us-content > div {
@@ -169,6 +172,7 @@ footer > .social-icons-links > div > .social-icons-link {
   border: 1px solid #ddd;
   width: fit-content;
   display: inline-block;
+  border-radius: 50%;
 }
 
 /*TABLET VERSION*/
