@@ -450,6 +450,10 @@ footer > div {
   flex: 0 0 33%;
 }
 
+footer > p {
+  font-size: 14px;
+}
+
 footer > div > h2 {
   font-size: 1rem;
   margin-bottom: 0.9375rem;
